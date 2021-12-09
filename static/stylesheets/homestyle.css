@@ -1,0 +1,127 @@
+main {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    
+    
+    /* text-align: center; */
+    justify-content: center;
+    /* align-items:center; */
+    
+    font-family: 'Jura', sans-serif;
+    font-size: calc(1vw + 1vh);
+
+}
+
+main > * {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    text-align: center;
+    /* justify-content: center; */
+    align-items:center;
+}
+
+.student {
+    /* background-color: #799AD1; */
+    background-color: white; 
+    color: #262529;
+
+    padding-top: 20px;
+}
+
+.teacher {
+    background-color: #799AD1;
+    /* background-color: #C8D7EC; */
+    background-color: white; 
+}
+
+.methods {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 2.5%;
+}
+
+.btnmethod {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 30%;
+    
+}
+
+.btnmethod > input {
+    background-color: white;    
+    
+    width: calc(90% - 1px);
+    
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    font-family: 'Jura', sans-serif;
+    font-size: 90%;
+    color: #262529;
+}
+
+
+/* .btnmethod > input:nth-child(1) {
+    width: 90%;
+    height: 100%;
+    background-color: white;    
+    
+    border-right: 1px solid #262529;
+} */
+
+.btnmethod > a {
+    display: flex;
+    width: calc(10% - 1px);
+    height: 100%;
+    background-color: white;
+    color: #262529;
+
+    text-decoration: none;
+    /* text-align: center; */
+    justify-content: center;
+    align-items:center;
+
+    border: 1px solid rgba(0,0,0,0.2);
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btnmethod > input:hover, .btnmethod > a:hover {
+    border-color: #262529;
+    color: #000;
+}
+
+.btnmethod > a:hover {
+    border-left: 1px solid #262529;
+}
+
+.btnmethod > input:active, .btnmethod > a:active {
+    background-color: #4781b9;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    
+}

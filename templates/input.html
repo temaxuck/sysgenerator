@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <title>User Input</title>
+{% endblock %}
+
+{% block body %} 
+    {% if wrong == 1 %}
+        <h1>Check input!</h1>
+    {% endif %}
+    <form action="#" method="post">
+        <div class="container">
+            <input type="text" name="dimension">
+            <input type="submit" value="Sumbit">
+            
+        </div>
+    </form>
+
+    <!-- <div class="matrix">
+        {% for row in matrix %}
+            {% for n in row %} <span> {{n}} </span> {% endfor %} <br>
+        {% endfor %}
+    </div> -->
+    
+{% endblock %}
